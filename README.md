@@ -29,7 +29,7 @@ brew install postgresql
 brew services start postgresql
 ```
 
-You will find the schema [here]().
+You will find the schema [here](https://dbdiagram.io/d/62f4d5c6c2d9cf52fa8b296d).
 
 ### Javascript framework: [Stimulus](https://stimulusjs.org/)
 

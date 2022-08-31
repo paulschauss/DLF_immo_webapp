@@ -1,0 +1,36 @@
+<div class="container">
+  <h1>Home</h1>
+
+  <h2>L'agence</h2>
+  <p>L'engagement, le goût de l'autre, l'esprit de service sont mes valeurs, et
+    sont le reflet de mon identité et de mes ambitions.
+    Entre Lyon, berceau de ma famille et Tournon-sur-Rhône, ma ville depuis 25 ans,
+    j'apporte mon expérience de l'immobilier et du terrain, et mes compétences juridiques
+    à  chacun de mes clients, à travers une relation basée sur la confiance et l'écoute.
+
+    Exigeante, je prends peu de biens à la vente.
+    Je vous accompagne, de l'estimation à la constitution de votre dossier de vente,
+    en passant par la publicité et la mise en valeur de votre bien.
+
+    Je propose des acquéreurs sélectionnés et assure le suivi administratif jusqu'à la signature définitive, tout en privilégiant une restitution constante des informations.
+    Je suis à votre disposition pour une collaboration sur mesure, à votre rythme.
+  </p>
+  <ul>
+    <li>Savoir-faire</li>
+    <li>Disponibilité</li>
+    <li>Réactivité</li>
+    <li>Transparence</li>
+  </ul>
+
+  <h2>Vente</h2>
+  <% @houses.each do |house| %>
+    <li><%= link_to house.name, house_path(house) %></li>
+  <% end %>
+
+  <h2>Estimation gratuite</h2>
+  <p>Une estimation juste de votre bien est la base d'une bonne transaction.
+  Un vendeur a tendance à surestimer son bien, tandis qu'un acquéreur le trouvera
+  toujours trop cher.Cette estimation professionnelle est une étape cruciale de votre projet de vente,
+  permettant à celui-ci d'aboutir dans les meilleures conditions.</p>
+  <button>Je demande mon estimation</button>
+</div>
